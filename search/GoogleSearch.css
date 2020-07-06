@@ -1,0 +1,26 @@
+.upper-right{
+    margin-left: 73em;
+}
+.container{
+    width: 400px;
+    height: 100px;
+    margin: 15em auto;
+}
+.search-bar{
+    border: 1px solid black;
+    border-radius: 20px;
+    padding:10px;
+    width:100%;
+    font-size:17px;
+}
+.search-button,.feeling-lucky{
+    width:200px;
+    padding:8px 8px 8px 8px;
+    margin:1em auto auto 6em;
+    border-radius: 5px;
+    font-size:17px;
+    background-color:#F5F5F5;
+}
+a:visited,a:link,a:hover{
+    color:#4364c7;
+}
