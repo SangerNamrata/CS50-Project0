@@ -7,17 +7,22 @@
     margin: 8em 0em 0em 0em;
 }
 .search-bar{
-    border:0.01em solid #a3a3a3;
+    border:0.01em solid #e8e9ec;
     border-radius: 20px;
     padding:10px;
     width:500px;
     font-size:17px;
     margin-left:24em;
 }
+.search-bar:focus,.search-bar:hover{
+    outline:none;
+    border:0.01em solid #FFFFFF;
+    box-shadow: 2px 2px 5px 2px #e4e4e4;
+}
 .google-image{
-    width:60%;
-    height:80%;
-    margin:0em 0em 1em 34.5em;
+    width:15.05em;
+    height:6em;
+    margin:0.05em 0em 1em 34em;
 }
 .search-button,.feeling-lucky{
     width:200px;
@@ -25,12 +30,12 @@
     margin:1em auto auto 6em;
     border-radius: 5px;
     font-size:17px;
-    background-color:#F6F6F6;
+    background-color:#f4f4f4;
     margin-left: 33.5em;
     border:0px;
 }
 .search-button:hover,.feeling-lucky:hover{
-    border:0.01em solid #a3a3a3;
+    border:0.01em solid #c6c6c6;
 }
 a:visited,a:link,a:hover{
     color:#4364c7;

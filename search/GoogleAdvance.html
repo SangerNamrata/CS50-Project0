@@ -3,27 +3,52 @@
         <title>
             Google Advance Search.
         </title>
+        <link rel="stylesheet" type="text/css" href="GoogleAdvance.css"/>
     </head>
     <body>
         <div class="header">
             <img src="Google.png"/>
             <a href="index.html">Google Search</a>
         </div>
-        <div>
+        <p>Advanced Search</p>
+        <hr>
+        <div class="container">
             <form id="form1">
-                <div class="left">
-                    <label for="allthesewords"> all these words</label>
-                    <label for="thisexactwordphrase">this exact word phrase</label>
-                    <label for="anyofthesewords">any of these words</label>
-                    <label for="noneofthesewords">none of these words</label>    
-                </div>
-                <div class="right">
-                    <input name="as_q" type="text" id="allthesewords"/>
-                    <input name="as_epq" type="text" id="thisexactwordphrase"/>
-                    <input name="as_oq" type="text" id="anyofthesewords">
-                    <input name="as_eq" type="text" id="noneofthesewords">
-                </div>
-                <input type="submit"  id="advance" value="Submit"  onClick="advanceSearch()">
+                <table >
+                    <tr>
+                        <td>
+                            <label for="allthesewords"> all these words:</label>
+                        </td>
+                        <td>
+                            <input name="as_q" type="text" id="allthesewords"/>
+                        </td>
+                    </tr>    
+                    <tr>
+                        <td>
+                            <label for="thisexactwordphrase">this exact word phrase:</label>
+                        </td>
+                        <td>
+                            <input name="as_epq" type="text" id="thisexactwordphrase"/>   
+                        </td>
+                    </tr>
+                    <tr>    
+                        <td>
+                            <label for="anyofthesewords">any of these words:</label> 
+                        </td>
+                        <td>
+                            <input name="as_oq" type="text" id="anyofthesewords">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="noneofthesewords">none of these words:</label>
+                        </td>
+                        <td>
+                            <input name="as_eq" type="text" id="noneofthesewords">        
+                        </td>
+                    </tr>
+                </table>
+                <input type="submit"  id="advance" value="Advance Search"  onClick="advanceSearch()">
             </form>    
         </div>
     </body>
