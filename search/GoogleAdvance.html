@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>
+            Google Advance Search.
+        </title>
+    </head>
+    <body>
+        <div class="header">
+            <img src="Google.png"/>
+            <a href="index.html">Google Search</a>
+        </div>
+        <div>
+            <form id="form1">
+                <div class="left">
+                    <label for="allthesewords"> all these words</label>
+                    <label for="thisexactwordphrase">this exact word phrase</label>
+                    <label for="anyofthesewords">any of these words</label>
+                    <label for="noneofthesewords">none of these words</label>    
+                </div>
+                <div class="right">
+                    <input name="as_q" type="text" id="allthesewords"/>
+                    <input name="as_epq" type="text" id="thisexactwordphrase"/>
+                    <input name="as_oq" type="text" id="anyofthesewords">
+                    <input name="as_eq" type="text" id="noneofthesewords">
+                </div>
+                <input type="submit"  id="advance" value="Submit"  onClick="advanceSearch()">
+            </form>    
+        </div>
+    </body>
+    <script>
+        function advanceSearch(){
+
+            document.getElementById("form1").action = "https://google.com/search?q=";
+            return true;
+        }
+    </script>
+</html>
