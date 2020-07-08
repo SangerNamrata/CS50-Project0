@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google Search</title>
+        <link rel="stylesheet" type="text/css" href="GoogleSearch.css">
+        <link rel="stylesheet" type="text/css" href="GoogleImage.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+    <body>
+        <div class="upper-right-corner">
+            <a href="index.html" class="links">Google Search</a>
+        </div>
+            
+        <div class="container">
+            <form id="form1">
+                <img src="GoogleImages.png" class="google-image">
+                <input type="text" id="textSearch1" name="q" class="search-bar">
+                <input type="submit" value="Google Search" class="search-button" onClick="googleSearch()">
+            </form> 
+        </div>
+    </body>
+    <script>
+        function googleSearch(){
+            document.getElementById("form1").action = "https://google.com/images#q=" + document.getElementById("textSearch1").value+"&tbm=isch";
+            return true;
+        }
+    </script>
+</html>

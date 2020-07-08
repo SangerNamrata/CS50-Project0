@@ -4,14 +4,20 @@
 .container{
     width: 400px;
     height: 100px;
-    margin: 15em auto;
+    margin: 8em 0em 0em 0em;
 }
 .search-bar{
-    border: 1px solid black;
+    border:0.01em solid #a3a3a3;
     border-radius: 20px;
     padding:10px;
-    width:100%;
+    width:500px;
     font-size:17px;
+    margin-left:24em;
+}
+.google-image{
+    width:60%;
+    height:80%;
+    margin:0em 0em 1em 34.5em;
 }
 .search-button,.feeling-lucky{
     width:200px;
@@ -19,7 +25,12 @@
     margin:1em auto auto 6em;
     border-radius: 5px;
     font-size:17px;
-    background-color:#F5F5F5;
+    background-color:#F6F6F6;
+    margin-left: 33.5em;
+    border:0px;
+}
+.search-button:hover,.feeling-lucky:hover{
+    border:0.01em solid #a3a3a3;
 }
 a:visited,a:link,a:hover{
     color:#4364c7;

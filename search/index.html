@@ -13,19 +13,25 @@
             
         <div class="container">
             <form id="form1">
-                <input type="text" id="textSearch" name="q" class="search-bar">
-                <input type="submit" value="Google Search" class="search-button" onClick="submitForm()">
+                <img src="Google.png" class="google-image">
+                <input type="text" id="textSearch1" name="q" class="search-bar">
+                <input type="submit" value="Google Search" class="search-button" onClick="googleSearch()">
             </form> 
-            <form action="">
-                <input type="submit" value="I'm Feeling Lucky" class="feeling-lucky">
+            <form id="form2">
+                <input type="text" id="textSearch2" name="q" class="search-bar" hidden>
+                <input type="submit" value="I'm Feeling Lucky" class="feeling-lucky" onClick="luckySearch()">
             </form>
         </div>
     </body>
     <script>
-        function submitForm(){
-            document.getElementById("form1").action = "https://google.com/search?q=" + document.getElementById("textSearch").value;
+        function googleSearch(){
+            document.getElementById("form1").action = "https://google.com/search?q=" + document.getElementById("textSearch1").value;
+            return true;
+        }
+        function luckySearch(){
+            document.getElementById("textSearch2").value = document.getElementById("textSearch1").value; 
+            document.getElementById("form2").action = "https://google.com/webhp#q="+document.getElementById("textSearch2").value+"&btnI=I'm Feeling Lucky";
             return true;
         }
     </script>
-
 </html>
